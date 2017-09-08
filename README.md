@@ -10,4 +10,5 @@
 2. Does the web page feature an interactive map that appears to have been created with Leaflet?
 
 ## Project Submission
-For this project a map was created with markers showing the latitude and longitude positions of a number of U.S. National Parks 
+For this project a map was created with markers showing the latitude and longitude positions of a number of U.S. National Parks
+For a direct link to week2project.html see the link next to the repository description at the top of the page
