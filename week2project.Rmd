@@ -1,0 +1,21 @@
+---
+title: "U.S. National Park Locations"
+date: "September 7, 2017"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+library(leaflet)
+```
+
+```{r create_map, echo = FALSE}
+natparks <- read.csv("natparks.csv")
+
+npsicon <- makeIcon(
+      iconUrl = "natpark.png",
+iconWidth = 32*512/667, iconHeight = 32, 
+iconAnchorX = 32*512/667/2, iconAnchorY = 16)
+
+natparks[,2:3] %>% leaflet(width = "100%") %>% addTiles() %>% 
+addMarkers(popup= natparks[,1], icon = npsicon)
+```
